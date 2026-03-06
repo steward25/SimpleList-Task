@@ -3,7 +3,7 @@
 A modern Android application demonstrating a multi-module architecture with shared logic, Jetpack Compose UI, and automated documentation.
 
 ## Project Structure
-- `:app`: The main Android application module using Jetpack Compose for the UI.
+- `:simple-list-app`: The main Android application module using Jetpack Compose for the UI.
 - `:sales-core`: A pure Kotlin library module containing the business logic and data models (SaleItem, SalesManager).
 
 ## Key Features
