@@ -34,17 +34,19 @@ android {
 
 tasks.withType<org.jetbrains.dokka.gradle.DokkaTask>().configureEach {
     dokkaSourceSets {
-        // This targets the standard Android source sets created by Dokka
+        // Instead of named("main"), we configure all discovered sets
         configureEach {
+            // Force Dokka to look at the Android source directory
+            sourceRoots.from(file("src/main/java"))
+
             moduleName.set("Sales Core Module")
 
-            // Check for README in the module directory
+            // This ensures public classes are documented even if they have no KDoc yet
+            reportUndocumented.set(true)
+
             if (file("README.md").exists()) {
                 includes.from("README.md")
             }
-
-            // Helpful if you want to skip documenting internal/test code
-            skipEmptyPackages.set(true)
         }
     }
 }
