@@ -23,6 +23,3 @@ A modern Android application demonstrating a multi-module architecture with shar
 3. Run the `:simple-list-app` module on an emulator or physical device.
 
 ## Documentation
-To generate the project documentation using Dokka, run:
-```bash
-./gradlew :sales-core:dokkaHtml
