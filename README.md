@@ -22,7 +22,9 @@ A modern Android application demonstrating a multi-module architecture with shar
 2. Sync the project with Gradle files.
 3. Run the `:simple-list-app` module on an emulator or physical device.
 
-## Documentation
-To generate the project documentation using Dokka, run:
-```bash
-./gradlew :sales-core:dokkaHtml
+## Unit Test
+<img width="1827" height="318" alt="test-pass" src="https://github.com/user-attachments/assets/e27b73dd-9efe-4d1b-954a-7f441b15b7b7" />
+
+ ## Recordings
+
+https://github.com/user-attachments/assets/52ba452e-9e9a-4741-bf52-00d9d4b80d73
